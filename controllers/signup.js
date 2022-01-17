@@ -2,6 +2,8 @@ const User = require("../models/user");
 
 const decryptor = require("../utils/password-util");
 
+const bcrypt = require("bcryptjs");
+
 exports.doSignUp = (req, res, next) => {
     const name = req.body.name;
     const email = req.body.email;
@@ -28,6 +30,6 @@ exports.doSignUp = (req, res, next) => {
             });
         })
         .catch((err) => {
-            return res.status(500).json({ message: "Server Error " });
+            console.log(err);
         });
 };
