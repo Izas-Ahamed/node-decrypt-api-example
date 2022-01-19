@@ -7,7 +7,7 @@
         "node": "14.17.4"
     },
     "scripts": {
-        "start": " cross-env NODE_ENV=production MONGO_PASSWORD=password12345 MONGO_USER=ijasahamed node app.js",
+        "start": " cross-env NODE_ENV=production MONGO_PASSWORD=yourpassword MONGO_USER=yourusername node app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
